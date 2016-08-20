@@ -1,0 +1,7 @@
+site 'https://supermarket.getchef.com/api/v1'
+
+cookbook 'java'
+cookbook 'build-essential'
+cookbook 'ark', '~> 1.0'
+cookbook 'runit', '~> 1.8'
+cookbook 'magic', :git => 'https://github.com/sczizzo/magic-cookbook.git'

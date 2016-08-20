@@ -1,0 +1,12 @@
+{
+  "name": "zookeeper",
+  "json_class": "Chef::Role",
+  "description":  "The zookeeper role",
+  "run_list":  [ "recipe[runit::default]", "recipe[zookeeper::default]"],
+  "chef_type": "role",
+  "override_attributes": {
+     "java": {
+         "jdk_version": 7
+     }
+  }
+}

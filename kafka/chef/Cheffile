@@ -1,0 +1,7 @@
+site 'https://supermarket.getchef.com/api/v1'
+
+cookbook 'hostsfile', '~> 2.4.5'
+cookbook 'runit', '~> 1.8.0'
+cookbook 'java'
+cookbook 'magic', :git => 'https://github.com/sczizzo/magic-cookbook.git'
+cookbook 'zookeeper', '~> 7.1.1'

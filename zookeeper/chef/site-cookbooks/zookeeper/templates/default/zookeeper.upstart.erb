@@ -1,0 +1,20 @@
+# zookeeper - Apache ZooKeeper coordination service
+#
+
+description "ZooKeeper coordination service"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+
+limit nofile 8192 8192
+
+console log
+
+setuid <%= @username %>
+setgid <%= @username %>
+
+script
+    exec <%= @exec %> start-foreground
+end script

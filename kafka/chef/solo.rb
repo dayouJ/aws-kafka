@@ -2,9 +2,10 @@ require 'chef/version_constraint'
 
 file_cache_path    "/var/chef/cache"
 file_backup_path   "/var/chef/backup"
-cookbook_path   [ "/deploy/repo/labs/kafka/chef/cookbooks" ]
-data_bag_path   "/deploy/repo/labs/kafka/chef/data_bags"
-role_path       "/deploy/repo/labs/kafka/chef/roles"
+
+cookbook_path   [ "/deploy/kafka/chef/cookbooks", "/deploy/kafka/chef/site-cookbooks" ]
+data_bag_path   "/deploy/kafka/chef/data_bags"
+role_path       "/deploy/kafka/chef/roles"
 
 log_level :info
 verbose_logging    false
