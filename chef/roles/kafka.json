@@ -1,0 +1,18 @@
+{
+  "name": "kafka",
+  "json_class": "Chef::Role",
+  "description":  "The kafka role",
+  "run_list":  [ "recipe[kafka_broker]" ],
+  "chef_type": "role",
+  "override_attributes": {
+     "java": {
+         "jdk_version": 8
+     },
+     "kafka_broker": {
+         "version": "0.10.0.1",
+         "scala_version": "2.11",
+         "tarball_url": "http://apache.rediris.es/kafka/0.10.0.1/kafka_2.11-0.10.0.1.tgz",
+         "install_dir": "/opt/kafka"
+     }
+  }
+}
